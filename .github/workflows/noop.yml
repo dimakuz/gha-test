@@ -6,11 +6,13 @@ on:
 jobs:
   do-nothing-one:
     name: Do nothing
+    runs-on: ubuntu-latest
     steps:
     - uses: 'actions/checkout@v3'
     - run: 'ls -l'
   do-nothing-two:
     name: Do something
+    runs-on: ubuntu-latest
     steps:
     - uses: 'actions/checkout@v3'
     - run: 'ls -ltr'
