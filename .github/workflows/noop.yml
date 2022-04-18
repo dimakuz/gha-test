@@ -1,7 +1,8 @@
 name: do nothing useful
 on:
-- push
-- cron: '0 * * * *'
+  push: {}
+  schedule:
+    cron: '0 * * * *'
 jobs:
   do-nothing-1:
   - uses: actions/checkout@v3
