@@ -4,10 +4,9 @@ on:
   schedule:
   - cron: '0 * * * *'
 jobs:
-  do-nothing-1:
-  - uses: actions/checkout@v3
-  - run: ls -l
-
-  do-nothing-2:
-  - uses: actions/checkout@v3
-  - run: ls -ltr
+  do-nothing-onw:
+  - uses: 'actions/checkout@v3'
+  - run: 'ls -l'
+  do-nothing-two:
+  - uses: 'actions/checkout@v3'
+  - run: 'ls -ltr'
